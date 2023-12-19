@@ -66,13 +66,13 @@
           <article class="post">
             <div class="post-image">
               <a href="">
-                <img loading="lazy" decoding="async" src="Images/3_47ad27a4-db92-4c31-a3ca-d98e645f6ab4.webp" alt="White Sauce Pasta Recipe">
+                <img loading="lazy" decoding="async" src="Images/photo-1567620905732-2d1ec7ab7445.jpg" alt="White Sauce Pasta Recipe">
               </a>
             </div>
             <div class="post-content">
-              <h2 class="post-title"><a href="">White Sauce Pasta Recipe (White Pasta)</a></h2>
+              <h2 class="post-title"><a href="">Mango Pancakes with Coconut Recipe</a></h2>
               <div class="post-description">
-                White Sauce Pasta...
+                Mango Pancakes...
               </div>
               <div class="post-read-more">
                 <a href=''>Read More</a>
@@ -86,13 +86,13 @@
       <article class="post">
         <div class="post-image">
           <a href="">
-            <img loading="lazy" decoding="async" src="Images/3_47ad27a4-db92-4c31-a3ca-d98e645f6ab4.webp" alt="White Sauce Pasta Recipe">
+            <img loading="lazy" decoding="async" src="Images/pexels-abhinav-goswami-291528-1024x863.jpg" alt="White Sauce Pasta Recipe">
           </a>
         </div>
         <div class="post-content">
-          <h2 class="post-title"><a href="">White Sauce Pasta Recipe (White Pasta)</a></h2>
+          <h2 class="post-title"><a href="">Dark Valrhona Chocolate Cake recipe</a></h2>
           <div class="post-description">
-            White Sauce Pasta...
+            Dark Chocolate Cake....
           </div>
           <div class="post-read-more">
             <a href=''>Read More</a>
@@ -104,13 +104,13 @@
   <article class="post">
     <div class="post-image">
       <a href="">
-        <img loading="lazy" decoding="async" src="Images/3_47ad27a4-db92-4c31-a3ca-d98e645f6ab4.webp" alt="White Sauce Pasta Recipe">
+        <img loading="lazy" decoding="async" src="Images/veggie-spring-rolls-blog.jpg" alt="White Sauce Pasta Recipe">
       </a>
     </div>
     <div class="post-content">
-      <h2 class="post-title"><a href="">White Sauce Pasta Recipe (White Pasta)</a></h2>
+      <h2 class="post-title"><a href="">Spring Rolls Recipe </a></h2>
       <div class="post-description">
-        White Sauce Pasta...
+        Spring Rolls are...
       </div>
       <div class="post-read-more">
         <a href=''>Read More</a>
@@ -222,7 +222,7 @@ h1{
 
 .post-image img {
   width: 100%;
-  height: auto;
+  height: 410px;
   display: block;
 }
 .post-image img:hover{
