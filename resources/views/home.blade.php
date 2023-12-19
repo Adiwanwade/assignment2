@@ -43,7 +43,7 @@
   <main>
 
 
-<h2 class="page-name">Blogs</h2>
+<h2 class="page-name" >Blogs</h2>
 
 <div style="display: flex;justify-content:center">
     <section class="blog-posts">
@@ -125,4 +125,5 @@
 
   <script src="script.js"></script>
 </body>
+<x-footer></x-footer>
 </html>

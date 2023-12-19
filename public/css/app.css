@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(18, 2, 2);
+    background-color: rgb(53, 51, 51);
   }
 
   .logo img {
@@ -139,4 +139,6 @@ body {
     position: relative;
     font-weight: 600;
     margin: 0px;
+    padding-bottom: 7px;
+    border-bottom:solid
   }
