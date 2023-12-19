@@ -42,11 +42,16 @@
     <ul class="mt-8">
         <li>
             <a
-                href="{{ route('admin') }}"
+                href="/home"
                 class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
                 >Home</a
             >
             @if(Auth::user()->isAdmin())
+            <a
+            href="{{ route('admin') }}"
+            class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+            >Admin Section</a
+        >
             <a
                 href="{{ route('admin-users') }}"
                 class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
