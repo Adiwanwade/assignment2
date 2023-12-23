@@ -1,3 +1,4 @@
+
  <!DOCTYPE html>
 <html lang="en">
 
@@ -121,9 +122,53 @@
   </article>
 </section>
   </div>
+
+
+<section style="display: grid;
+grid-template-columns: repeat(2,4fr);
+grid-gap: 50px;
+margin-left: 385px;
+width: 1149px;
+margin-top: 29px;
+">
+    @if($posts)
+    @foreach ($posts as $post)
+
+
+            <article class="post">
+    <div  class="post-image">
+      <a href="">
+        <img loading="lazy" decoding="async" src="Images/veggie-spring-rolls-blog.jpg" alt="White Sauce Pasta Recipe">
+      </a>
+    </div>
+    <div class="post-content">
+      <h2 class="post-title"><a href="">{{ $post->title }} </a></h2>
+      <div class="post-description">
+        {{ $post->content }}
+      </div>
+      <div class="post-read-more">
+        <a href='{{ route('post-show', $post->id)}}'>Read More</a>
+      </div>
+    </div>
+  </article>
+
+@endforeach
+
+@else
+        <div class="p-6">No content yet, please visit after some days.</div>
+    @endif
+
+</section>
+
+
+
+
   </main>
 
   <script src="script.js"></script>
 </body>
 <x-footer></x-footer>
 </html>
+
+
+

@@ -42,7 +42,7 @@
     <ul class="mt-8">
         <li>
             <a
-                href="/home"
+                href="{{route('home')}}"
                 class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
                 >Home</a
             >

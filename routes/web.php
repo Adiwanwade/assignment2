@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminUsersController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,18 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [
+    HomeController::class, 'index'
+])->name('home');
+Route::get('/home', [
+    HomeController::class, 'index'
+])->name('home');
+Route::get('/posts/{id}', [
+    HomeController::class, 'show'
+])->name('post-show');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
