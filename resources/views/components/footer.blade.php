@@ -1,5 +1,9 @@
 
-<section style="background-color: rgb(44, 41, 41);padding:70px">
+<section style="background-color: rgb(44, 41, 41);padding:70px; background: url('/Images/bgimage.jpg') no-repeat center center fixed;
+background-size: auto;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;">
     <div style="  display: flex;
     align-items: left;
     justify-content: left;">

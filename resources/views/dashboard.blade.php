@@ -6,21 +6,17 @@
     </x-slot>
 
 
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg flex justify-center">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
+
 
 
     <nav
-    class="absolute inset-0 transform lg:transform-none lg:opacity-100 duration-200 lg:relative z-10 w-80 bg-indigo-900 text-white h-screen p-3"
+    class="absolute inset-0 transform lg:transform-none lg:opacity-100 duration-200 lg:relative z-10 w-80 bg-gray-800 text-white h-screen p-3"
     :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
 >
     <div class="flex justify-between">
-        <span class="font-bold text-2xl sm:text-3xl p-2">Sidebar</span>
+        <span class="font-bold text-2xl sm:text-3xl p-2" style="color: #B0976D">Menu</span>
         <button
-            class="p-2 focus:outline-none focus:bg-indigo-800 hover:bg-indigo-800 rounded-md lg:hidden"
+            class="p-2 focus:outline-none focus:bg-gray-800 hover:bg-gray-500 rounded-md lg:hidden"
             @click="open = false"
         >
             <svg
@@ -43,51 +39,48 @@
         <li>
             <a
                 href="{{route('home')}}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >Home</a
             >
             @if(Auth::user()->isAdmin())
             <a
             href="{{ route('admin') }}"
-            class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+            class="block px-4 py-2 hover:bg-gray-500 rounded-md"
             >Admin Section</a
         >
             <a
                 href="{{ route('admin-users') }}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >All Users</a
             >
             <a
 
             href="{{ route('admin-users-create') }}"
-            class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+            class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >Create User</a>
                 @endif
                 <a
                 href="{{ route('admin-categories') }}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >All Categories</a
             >
             <a
                 href="{{ route('admin-categories-create') }}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >Create Category</a
             >
             <a
             href="{{ route('admin-posts') }}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >All Posts</a
             >
             <a
             href="{{ route('admin-posts-create') }}"
-                class="block px-4 py-2 hover:bg-indigo-800 rounded-md"
+                class="block px-4 py-2 hover:bg-gray-500 rounded-md"
                 >Create Post</a
             >
         </li>
     </ul>
     </nav>
-
-
-
 
 </x-app-layout>

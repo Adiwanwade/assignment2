@@ -21,7 +21,7 @@
         <li><a href="#">Food Blog</a></li>
         <li><a href="#">Listings</a></li>
         <li class="active"><a href="#">Blog</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="/Aboutus">About Us</a></li>
         @if (Route::has('login'))
                     @auth
                         <li><a href="{{ url('/dashboard') }}" >Dashboard</a></li>
@@ -37,7 +37,7 @@
     </nav>
     <div class="cta-buttons">
       <a href="#" class="cta-button">List Your Place</a>
-      <a href="#" class="cta-button">Share Your Recipe</a>
+      <a href="{{ route('admin-posts-create') }}" class="cta-button">Share Your Recipe</a>
     </div>
   </header>
 <br>
