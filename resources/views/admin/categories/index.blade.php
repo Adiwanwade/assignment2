@@ -37,5 +37,6 @@
             </div>
             </div>
         </div>
+        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">{{ $categories->links() }}</div>
     </div>
 </x-admin-layout>

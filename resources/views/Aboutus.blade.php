@@ -16,8 +16,8 @@
       <ul>
         <li><a href="{{route('home')}}">Food Blog</a></li>
         <li><a href="#">Listings</a></li>
-        <li class="active"><a href="{{route('home')}}">Blog</a></li>
-        <li><a href="/Aboutus">About Us</a></li>
+        <li><a href="{{route('home')}}">Blog</a></li>
+        <li class="active"><a href="/Aboutus">About Us</a></li>
         @if (Route::has('login'))
                     @auth
                         <li><a href="{{ url('/dashboard') }}" >Dashboard</a></li>
@@ -42,11 +42,19 @@
 
 <div class="container mt-5 d-flex justify-content-center">
 
-    <div class="card p-3 justify-content-center" style="margin-left: 718px">
+    <div class="card p-3 justify-content-center" style="margin-left: 718px;width: 373px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 371px;
+    margin-top:202px;
+  ">
 
         <div class="d-flex justify-content-center">
 
-            <div style="margin-left: 98px">
+            <div style="margin-left: 97px;
+            margin-bottom: 19px;
+            padding: 5px;">
         <img src="Images/WhatsApp Image 2023-12-23 at 5.13.40 PM.jpeg" class="rounded" style="border-radius: 20.4rem" width="155" >
         </div>
 
@@ -57,7 +65,9 @@
 
            <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
 
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" style="margin-left: 37px;
+            margin-bottom: 31px;
+            margin-top: 31px;">
 
                 <span class="articles">Articles</span>
                 <span class="number1">38</span>
@@ -85,16 +95,17 @@
            <div class="button ml-20 mt-5 d-flex flex-row align-items-center">
 
             <button style="color: #e7e8ee;
-            background-color: #2727c5;
+            background-color: #8a879c;
             border-radius: 10px;
-            padding: 7px;">
-            <a href="https://instagram.com/adwanwade?igshid=M2RkZGJiMzhjOQ==">
+            padding: 11px;
+            margin-left: 90px;">
+            <a href="https://instagram.com/adwanwade?igshid=M2RkZGJiMzhjOQ==" style="text-decoration: none">
                 Follow
             </button>
 <button style="color: #e7e8ee;
-background-color: #3820ec;
+background-color: #8a879c;
 border-radius: 10px;
-padding: 7px;margin-left:30px"><a href="https://www.linkedin.com/in/aditya-wanwade-07b888216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Connect</button>
+padding: 11px;margin-left:30px"><a href="https://www.linkedin.com/in/aditya-wanwade-07b888216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration: none">Connect</button>
 
            </div>
 
@@ -112,7 +123,7 @@ padding: 7px;margin-left:30px"><a href="https://www.linkedin.com/in/aditya-wanwa
  <style>
     body{
 
-background-color:#B3E5FC;
+background-color:#9d2424d4;
 border-radius: 10px;
 
 }

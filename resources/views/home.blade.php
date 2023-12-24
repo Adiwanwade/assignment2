@@ -14,7 +14,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.png" alt="Food Blog Logo">
+      <img src="Images/62e1154107d87_json_image_1658918209.webp" alt="Food Blog Logo" style="max-width: 30%">
     </div>
     <nav>
       <ul>
